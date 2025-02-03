@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Biscuits - Fresh Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Life Biscuits</h1>
+        <p>Fresh and Delicious Biscuits Delivered to Your Door</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Life Biscuits</h2>
+        <p>Enjoy the finest bakery biscuits with authentic taste and quality.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p><strong>Sukhab Narula</strong> is the founder of Life Biscuits, originating from Punjab, India. Our mission is to offer the best homemade biscuits made with love and high-quality ingredients.</p>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Choose Your Biscuit</h2>
+        <div class="product">
+            <label for="biscuitType">Select Biscuit Type:</label>
+            <select id="biscuitType" onchange="updateImage()">
+                <option value="Chocolate Chip">Chocolate Chip - $2</option>
+                <option value="Oatmeal">Oatmeal - $1.5</option>
+                <option value="Butter">Butter - $1.2</option>
+            </select>
+            <img id="biscuitImage" src="images/default.png" alt="Biscuit Image">
+        </div>
+
+        <div class="product">
+            <label for="quantity">Enter Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+        </div>
+
+        <div class="total">
+            <p>Total Price: $<span id="totalPrice">0</span></p>
+        </div>
+
+        <button onclick="calculateTotal()">Calculate Total</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@lifebiscuits.com</p>
+        <p>Phone: +91 97819 78790</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Life Biscuits. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f9f9f9;
+    padding: 50px;
+    font-size: 22px;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Product Selection */
+.product {
+    margin-bottom: 30px;
+}
+
+.product select, .product input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* Total Price */
+.total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 18px;
+    }
+    .product select, .product input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    section h2 {
+        font-size: 22px;
+    }
+}
